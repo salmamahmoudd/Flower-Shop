@@ -1,0 +1,157 @@
+@media (max-width:1200px){
+    html{
+        font-size: 58%;
+    }
+    section{
+        padding: 2rem 6%;
+    }
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 2rem 3%;
+    }
+
+    header{
+        padding: 2rem 5%;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+    .about .row{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about .row .video-container,
+    .about .row .content{
+        flex: 1 1 100%;
+    }
+    .about .row .video-container video{
+        width: 100%;
+    }
+
+    .contact .row{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .contact .row form,
+    .contact .row .image{
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    .contact .row .image img{
+        width: 100%;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 52%;
+    }
+
+    header .fa-bars{
+        display: block; 
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        flex-direction: column;
+        text-align: center;
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        display: block;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: .1rem solid rgba(0,0,0,.1);
+        background: #fff;
+    }
+
+    .home h1{
+        font-size: 4rem;
+    }
+    .home p{
+        font-size: 1.4rem;
+    }
+
+    .about .row .content h3{
+        font-size: 2.8rem;
+    }
+    .about .row .content p{
+        font-size: 1.5rem;
+    }
+
+    .products .box-container,
+    .review .box-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .products .box-container .box,
+    .review .box-container .box{
+        flex: 1 1 100%;
+    }
+
+    .footer .box-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .home h1{
+        font-size: 3rem;
+    }
+    .home p{
+        font-size: 1.2rem;
+    }
+
+    .about .row .content h3{
+        font-size: 2.5rem;
+    }
+    .about .row .content p{
+        font-size: 1.4rem;
+    }
+
+    .products .box-container .box .content h3{
+        font-size: 2rem;
+    }
+    .products .box-container .box .content .price{
+        font-size: 2.2rem;
+    }
+
+    .review .box-container .box .user h3{
+        font-size: 1.6rem;
+    }
+    .review .box-container .box p{
+        font-size: 1.3rem;
+    }
+
+    .contact .row form{
+        padding: 1.5rem 2rem;
+    }
+
+    .icons-container .icon{
+        flex: 1 1 100%;
+    }
+}
